@@ -5,23 +5,24 @@
  *
  * Example conf class
  * ------------------
- * class YextApi {
+ * class ApiData {
  *   String key
  *   String url
  * }
  *
  * Corresponding env variables
  * ---------------------------
- * export RATPACK_YEXT__API__KEY='123abcd'
- * export RATPACK_YEXT__API__URL='https://api.yext.com/v2'
+ * export RATPACK_DATA__API__KEY='123abcd'
+ * export RATPACK_DATA__API__URL='https://api.data.com/v2'
  */
 // external
 import static ratpack.groovy.Groovy.ratpack
 // internal
+import conf.ApiData
 
 ratpack {
 	serverConfig {
 		env()
-		//require("/yext/api", YextApi)
+		require("/data/api", ApiData)
 	}
 }

@@ -6,15 +6,9 @@
 import static ratpack.groovy.Groovy.ratpack
 
 ratpack {
-	// cors headers
-	include 'modules/cors.groovy'
-
 	// external file conf
 	include 'modules/server-config.groovy'
 
 	// fake business logic module
 	include 'modules/business-stub.groovy'
-
-	// logging (have to be the last one)
-	include 'modules/request-log.groovy'
 }
