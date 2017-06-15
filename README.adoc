@@ -1,0 +1,3 @@
+= ratpack-require-conf
+
+A 'gigawatt' powered project.
